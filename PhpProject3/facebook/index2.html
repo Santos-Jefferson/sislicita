@@ -1,0 +1,51 @@
+<?php
+require "conecta.php";
+require_once "cabecalho_reduzido.php";
+require_once "cabecalho_lote.php";
+?>
+
+<form method="post" action="envia.php" enctype="multipart/form-data">
+<input type="HIDDEN" name="redirect">
+ <table width="48%" border="0"
+ <tbody><tr>
+ <td height="19" width="25%" style="text-align: right;">Nome:
+ </td>
+ <td height="19" width="75%">
+ <input type="text" name="nome" style="width: 300px;">
+ </td>
+ </tr>
+ <tr>
+ <td height="19" width="25%" style="text-align: right;">E-mail:
+ </td>
+ <td height="19" width="75%">
+ <input type="text" name="email" id="email" style="width: 300px;">
+ </td>
+ </tr>
+ <tr>
+ <td height="19" width="25%" style="text-align: right;">Telefone:</td>
+ <td height="19" width="75%">
+ <input type="text" name="telefone" style="width: 300px;">
+ </td>
+ </tr>
+ <tr>
+ <td height="19" width="25%" style="text-align: right;">Observação:</td>
+ <td height="19" width="75%">
+ <textarea name="observacao" style=" width: 324px; height: 130px; "></textarea>
+ </td>
+ </tr>
+<tr>
+ <td height="19" width="25%" style="text-align: right;">Seu anexo:</td>
+ <td height="19" width="75%">
+ <input type="file" name="arquivo" id="arqivo">
+ </td>
+ </tr>
+<tr>
+ <td height="19" width="25%">
+ </td>
+ <td height="19" width="75%">
+ <input type="submit" name="Submit" value="Enviar">
+ <input type="reset" name="Reset" value="Limpar">
+ </td>
+ </tr>
+ </tbody></table>
+</form>
